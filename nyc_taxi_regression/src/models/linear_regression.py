@@ -17,10 +17,10 @@ class LinearRegressionCustom:
         Number of iterations for gradient descent
     """
     
-    def __init__(self, method='normal_equation', learning_rate=0.01, n_iterations=1000):
+    def __init__(self, method='normal_equation', learning_rate=0.01, max_iterations=1000):
         self.method = method
         self.learning_rate = learning_rate
-        self.n_iterations = n_iterations
+        self.n_iterations = max_iterations
         self.weights = None
         self.bias = None
         self.cost_history = []
